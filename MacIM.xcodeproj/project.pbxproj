@@ -17,6 +17,7 @@
 		9B3E8E95251F1ABF00686107 /* YZChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E8E94251F1ABF00686107 /* YZChatViewController.m */; };
 		9B3E8E98251F1B1100686107 /* YZChat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B3E8E97251F1B1100686107 /* YZChat.storyboard */; };
 		9B3E8E9F251F227D00686107 /* YZChatLeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E8E9E251F227D00686107 /* YZChatLeftView.m */; };
+		9B3E8EA3251F255500686107 /* YZChatSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E8EA2251F255500686107 /* YZChatSplitViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		9B3E8E97251F1B1100686107 /* YZChat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YZChat.storyboard; sourceTree = "<group>"; };
 		9B3E8E9D251F227D00686107 /* YZChatLeftView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZChatLeftView.h; sourceTree = "<group>"; };
 		9B3E8E9E251F227D00686107 /* YZChatLeftView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZChatLeftView.m; sourceTree = "<group>"; };
+		9B3E8EA1251F255500686107 /* YZChatSplitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZChatSplitViewController.h; sourceTree = "<group>"; };
+		9B3E8EA2251F255500686107 /* YZChatSplitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZChatSplitViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				9B3E8E97251F1B1100686107 /* YZChat.storyboard */,
 				9B3E8E9D251F227D00686107 /* YZChatLeftView.h */,
 				9B3E8E9E251F227D00686107 /* YZChatLeftView.m */,
+				9B3E8EA1251F255500686107 /* YZChatSplitViewController.h */,
+				9B3E8EA2251F255500686107 /* YZChatSplitViewController.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 				9B3E8E71251F18F700686107 /* ViewController.m in Sources */,
 				9B3E8E79251F18F700686107 /* main.m in Sources */,
 				9B3E8E95251F1ABF00686107 /* YZChatViewController.m in Sources */,
+				9B3E8EA3251F255500686107 /* YZChatSplitViewController.m in Sources */,
 				9B3E8E91251F1A6C00686107 /* YZChatTopBarView.m in Sources */,
 				9B3E8E9F251F227D00686107 /* YZChatLeftView.m in Sources */,
 				9B3E8E6E251F18F600686107 /* AppDelegate.m in Sources */,
