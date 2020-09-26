@@ -1,5 +1,5 @@
 //
-//  YZChatSplitView.h
+//  YZSplitView.h
 //  MacIM
 //
 //  Created by yanzhen on 2020/9/26.
@@ -9,9 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YZChatSplitView : NSView
-
-@property (nonatomic, weak) NSViewController* controller;
+@interface YZSplitView : NSSplitView
 
 @end
 

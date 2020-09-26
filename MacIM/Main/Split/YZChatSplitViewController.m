@@ -16,10 +16,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
-    _splitView = [[YZChatSplitView alloc] initWithFrame:self.view.bounds];
-    self.splitView.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;
-    self.splitView.controller = self;
+    _splitView = [[YZSplitView alloc] initWithFrame:self.view.bounds];
+    _splitView.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;
     [self.view addSubview:self.splitView];
+//    _splitView = [[YZChatSplitView alloc] initWithFrame:self.view.bounds];
+//    self.splitView.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;
+//    self.splitView.controller = self;
+//    [self.view addSubview:self.splitView];
     
     
 }

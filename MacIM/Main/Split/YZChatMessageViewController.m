@@ -21,15 +21,14 @@
     // Do view setup here.
     
     _tableVC = [[YZChatTableViewController alloc] init];
-    _tableVC.view.frame = NSMakeRect(0, 0, 280, 120);
+    _tableVC.view.frame = NSMakeRect(0, 0, self.splitView.frame.size.width / 2, self.splitView.frame.size.height);
     [self addChildViewController:_tableVC];
     
     _chatVC = [[YZChatChatViewController alloc] init];
-    _chatVC.view.frame = NSMakeRect(280, 0, 280, 200);
+    _chatVC.view.frame = NSMakeRect(_tableVC.view.frame.size.width, 0, _tableVC.view.frame.size.width, self.splitView.frame.size.height);
     [self addChildViewController:_chatVC];
-    
-    [self.splitView addSubview:_tableVC.view];
-    [self.splitView addSubview:_chatVC.view];
+    [self.splitView addArrangedSubview:_tableVC.view];
+    [self.splitView addArrangedSubview:_chatVC.view];
 }
 
 @end
