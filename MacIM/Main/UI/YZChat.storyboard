@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="RWk-tU-QTk">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17156"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="RP9-XO-C6M">
+            <objects>
+                <windowController id="RWk-tU-QTk" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="a7j-x2-FH2" customClass="YZChatWindow">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="960" height="600"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+                        <value key="minSize" type="size" width="960" height="600"/>
+                        <value key="maxSize" type="size" width="960" height="600"/>
+                        <view key="contentView" id="392-sI-dSD">
+                            <rect key="frame" x="0.0" y="0.0" width="960" height="600"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <connections>
+                            <outlet property="delegate" destination="RWk-tU-QTk" id="WrU-6m-4nv"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="ptq-nw-57U" kind="relationship" relationship="window.shadowedContentViewController" id="gCa-7a-GTH"/>
+                    </connections>
+                </windowController>
+                <customObject id="vfi-4Y-NFR" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="196" y="-69"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PPi-tq-2lu">
+            <objects>
+                <viewController id="ptq-nw-57U" sceneMemberID="viewController">
+                    <view key="view" id="c4x-c2-bEm">
+                        <rect key="frame" x="0.0" y="0.0" width="960" height="540"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="SQV-GG-fvp" customClass="YZChatTopBarView">
+                                <rect key="frame" x="100" y="480" width="860" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="oBy-I3-vY4"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="ydc-02-bOb" customClass="YZChatLeftView">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="540"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="dwo-6B-FIB"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="SQV-GG-fvp" firstAttribute="top" secondItem="c4x-c2-bEm" secondAttribute="top" id="Fet-tv-vQ7"/>
+                            <constraint firstAttribute="bottom" secondItem="ydc-02-bOb" secondAttribute="bottom" id="de4-Az-3JE"/>
+                            <constraint firstAttribute="trailing" secondItem="SQV-GG-fvp" secondAttribute="trailing" id="h1Q-Jz-Y9S"/>
+                            <constraint firstItem="SQV-GG-fvp" firstAttribute="leading" secondItem="c4x-c2-bEm" secondAttribute="leading" constant="100" id="q5e-J8-BF4"/>
+                            <constraint firstItem="ydc-02-bOb" firstAttribute="top" secondItem="c4x-c2-bEm" secondAttribute="top" id="rml-bb-vdm"/>
+                            <constraint firstItem="ydc-02-bOb" firstAttribute="leading" secondItem="c4x-c2-bEm" secondAttribute="leading" id="v0h-8S-dBF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="Yu3-hz-HP5" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="694"/>
+        </scene>
+    </scenes>
+</document>

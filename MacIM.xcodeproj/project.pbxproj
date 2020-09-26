@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B3E8E6E251F18F600686107 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E8E6D251F18F600686107 /* AppDelegate.m */; };
+		9B3E8E71251F18F700686107 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E8E70251F18F700686107 /* ViewController.m */; };
+		9B3E8E73251F18F700686107 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B3E8E72251F18F700686107 /* Assets.xcassets */; };
+		9B3E8E76251F18F700686107 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B3E8E74251F18F700686107 /* Main.storyboard */; };
+		9B3E8E79251F18F700686107 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E8E78251F18F700686107 /* main.m */; };
+		9B3E8E8D251F1A0100686107 /* YZChatWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E8E8B251F1A0100686107 /* YZChatWindow.m */; };
+		9B3E8E91251F1A6C00686107 /* YZChatTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E8E90251F1A6C00686107 /* YZChatTopBarView.m */; };
+		9B3E8E95251F1ABF00686107 /* YZChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E8E94251F1ABF00686107 /* YZChatViewController.m */; };
+		9B3E8E98251F1B1100686107 /* YZChat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B3E8E97251F1B1100686107 /* YZChat.storyboard */; };
+		9B3E8E9F251F227D00686107 /* YZChatLeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E8E9E251F227D00686107 /* YZChatLeftView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9B3E8E69251F18F600686107 /* MacIM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacIM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B3E8E6C251F18F600686107 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9B3E8E6D251F18F600686107 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9B3E8E6F251F18F600686107 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9B3E8E70251F18F700686107 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9B3E8E72251F18F700686107 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B3E8E75251F18F700686107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B3E8E77251F18F700686107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B3E8E78251F18F700686107 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9B3E8E7A251F18F700686107 /* MacIM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacIM.entitlements; sourceTree = "<group>"; };
+		9B3E8E8B251F1A0100686107 /* YZChatWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZChatWindow.m; sourceTree = "<group>"; };
+		9B3E8E8C251F1A0100686107 /* YZChatWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZChatWindow.h; sourceTree = "<group>"; };
+		9B3E8E8F251F1A6C00686107 /* YZChatTopBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZChatTopBarView.h; sourceTree = "<group>"; };
+		9B3E8E90251F1A6C00686107 /* YZChatTopBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZChatTopBarView.m; sourceTree = "<group>"; };
+		9B3E8E93251F1ABF00686107 /* YZChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZChatViewController.h; sourceTree = "<group>"; };
+		9B3E8E94251F1ABF00686107 /* YZChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZChatViewController.m; sourceTree = "<group>"; };
+		9B3E8E97251F1B1100686107 /* YZChat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YZChat.storyboard; sourceTree = "<group>"; };
+		9B3E8E9D251F227D00686107 /* YZChatLeftView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZChatLeftView.h; sourceTree = "<group>"; };
+		9B3E8E9E251F227D00686107 /* YZChatLeftView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZChatLeftView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B3E8E66251F18F600686107 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B3E8E60251F18F600686107 = {
+			isa = PBXGroup;
+			children = (
+				9B3E8E6B251F18F600686107 /* MacIM */,
+				9B3E8E6A251F18F600686107 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B3E8E6A251F18F600686107 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B3E8E69251F18F600686107 /* MacIM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B3E8E6B251F18F600686107 /* MacIM */ = {
+			isa = PBXGroup;
+			children = (
+				9B3E8E6C251F18F600686107 /* AppDelegate.h */,
+				9B3E8E6D251F18F600686107 /* AppDelegate.m */,
+				9B3E8E6F251F18F600686107 /* ViewController.h */,
+				9B3E8E70251F18F700686107 /* ViewController.m */,
+				9B3E8E88251F19C400686107 /* Main */,
+				9B3E8E82251F196E00686107 /* Manager */,
+				9B3E8E72251F18F700686107 /* Assets.xcassets */,
+				9B3E8E74251F18F700686107 /* Main.storyboard */,
+				9B3E8E77251F18F700686107 /* Info.plist */,
+				9B3E8E78251F18F700686107 /* main.m */,
+				9B3E8E7A251F18F700686107 /* MacIM.entitlements */,
+			);
+			path = MacIM;
+			sourceTree = "<group>";
+		};
+		9B3E8E82251F196E00686107 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		9B3E8E88251F19C400686107 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9B3E8E89251F19DA00686107 /* UI */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9B3E8E89251F19DA00686107 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9B3E8E8C251F1A0100686107 /* YZChatWindow.h */,
+				9B3E8E8B251F1A0100686107 /* YZChatWindow.m */,
+				9B3E8E93251F1ABF00686107 /* YZChatViewController.h */,
+				9B3E8E94251F1ABF00686107 /* YZChatViewController.m */,
+				9B3E8E8F251F1A6C00686107 /* YZChatTopBarView.h */,
+				9B3E8E90251F1A6C00686107 /* YZChatTopBarView.m */,
+				9B3E8E97251F1B1100686107 /* YZChat.storyboard */,
+				9B3E8E9D251F227D00686107 /* YZChatLeftView.h */,
+				9B3E8E9E251F227D00686107 /* YZChatLeftView.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B3E8E68251F18F600686107 /* MacIM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B3E8E7D251F18F700686107 /* Build configuration list for PBXNativeTarget "MacIM" */;
+			buildPhases = (
+				9B3E8E65251F18F600686107 /* Sources */,
+				9B3E8E66251F18F600686107 /* Frameworks */,
+				9B3E8E67251F18F600686107 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacIM;
+			productName = MacIM;
+			productReference = 9B3E8E69251F18F600686107 /* MacIM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B3E8E61251F18F600686107 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					9B3E8E68251F18F600686107 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 9B3E8E64251F18F600686107 /* Build configuration list for PBXProject "MacIM" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B3E8E60251F18F600686107;
+			productRefGroup = 9B3E8E6A251F18F600686107 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B3E8E68251F18F600686107 /* MacIM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B3E8E67251F18F600686107 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B3E8E73251F18F700686107 /* Assets.xcassets in Resources */,
+				9B3E8E76251F18F700686107 /* Main.storyboard in Resources */,
+				9B3E8E98251F1B1100686107 /* YZChat.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B3E8E65251F18F600686107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B3E8E8D251F1A0100686107 /* YZChatWindow.m in Sources */,
+				9B3E8E71251F18F700686107 /* ViewController.m in Sources */,
+				9B3E8E79251F18F700686107 /* main.m in Sources */,
+				9B3E8E95251F1ABF00686107 /* YZChatViewController.m in Sources */,
+				9B3E8E91251F1A6C00686107 /* YZChatTopBarView.m in Sources */,
+				9B3E8E9F251F227D00686107 /* YZChatLeftView.m in Sources */,
+				9B3E8E6E251F18F600686107 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9B3E8E74251F18F700686107 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B3E8E75251F18F700686107 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B3E8E7B251F18F700686107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9B3E8E7C251F18F700686107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9B3E8E7E251F18F700686107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacIM/MacIM.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacIM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.msb.MacIM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9B3E8E7F251F18F700686107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacIM/MacIM.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacIM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.msb.MacIM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B3E8E64251F18F600686107 /* Build configuration list for PBXProject "MacIM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B3E8E7B251F18F700686107 /* Debug */,
+				9B3E8E7C251F18F700686107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B3E8E7D251F18F700686107 /* Build configuration list for PBXNativeTarget "MacIM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B3E8E7E251F18F700686107 /* Debug */,
+				9B3E8E7F251F18F700686107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B3E8E61251F18F600686107 /* Project object */;
+}
