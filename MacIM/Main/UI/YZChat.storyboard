@@ -33,10 +33,10 @@
             </objects>
             <point key="canvasLocation" x="196" y="-69"/>
         </scene>
-        <!--View Controller-->
+        <!--Chat View Controller-->
         <scene sceneID="PPi-tq-2lu">
             <objects>
-                <viewController id="ptq-nw-57U" sceneMemberID="viewController">
+                <viewController id="ptq-nw-57U" customClass="YZChatViewController" sceneMemberID="viewController">
                     <view key="view" id="c4x-c2-bEm">
                         <rect key="frame" x="0.0" y="0.0" width="960" height="540"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -53,20 +53,43 @@
                                     <constraint firstAttribute="width" constant="100" id="dwo-6B-FIB"/>
                                 </constraints>
                             </customView>
+                            <containerView translatesAutoresizingMaskIntoConstraints="NO" id="9Re-u6-BLA">
+                                <rect key="frame" x="100" y="0.0" width="860" height="480"/>
+                                <connections>
+                                    <segue destination="NEz-xc-LCj" kind="embed" id="BHA-de-67I"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="9Re-u6-BLA" secondAttribute="bottom" id="24d-hX-Mg4"/>
                             <constraint firstItem="SQV-GG-fvp" firstAttribute="top" secondItem="c4x-c2-bEm" secondAttribute="top" id="Fet-tv-vQ7"/>
+                            <constraint firstItem="9Re-u6-BLA" firstAttribute="top" secondItem="SQV-GG-fvp" secondAttribute="bottom" id="TME-C6-OYt"/>
+                            <constraint firstItem="9Re-u6-BLA" firstAttribute="leading" secondItem="ydc-02-bOb" secondAttribute="trailing" id="TR5-2r-oIQ"/>
                             <constraint firstAttribute="bottom" secondItem="ydc-02-bOb" secondAttribute="bottom" id="de4-Az-3JE"/>
                             <constraint firstAttribute="trailing" secondItem="SQV-GG-fvp" secondAttribute="trailing" id="h1Q-Jz-Y9S"/>
                             <constraint firstItem="SQV-GG-fvp" firstAttribute="leading" secondItem="c4x-c2-bEm" secondAttribute="leading" constant="100" id="q5e-J8-BF4"/>
                             <constraint firstItem="ydc-02-bOb" firstAttribute="top" secondItem="c4x-c2-bEm" secondAttribute="top" id="rml-bb-vdm"/>
                             <constraint firstItem="ydc-02-bOb" firstAttribute="leading" secondItem="c4x-c2-bEm" secondAttribute="leading" id="v0h-8S-dBF"/>
+                            <constraint firstAttribute="trailing" secondItem="9Re-u6-BLA" secondAttribute="trailing" id="vkT-Cu-25E"/>
                         </constraints>
                     </view>
                 </viewController>
                 <customObject id="Yu3-hz-HP5" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="135" y="694"/>
+        </scene>
+        <!--Chat Message View Controller-->
+        <scene sceneID="AZf-1k-YUs">
+            <objects>
+                <viewController id="NEz-xc-LCj" customClass="YZChatMessageViewController" sceneMemberID="viewController">
+                    <view key="view" id="vQw-8J-lHX">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="0DM-OD-xlP" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5" y="1286"/>
         </scene>
     </scenes>
 </document>

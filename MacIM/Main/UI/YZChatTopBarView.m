@@ -12,8 +12,8 @@
 {
     self = [super init];
     if (self) {
-        self.wantsLayer = YES;
-        self.layer.backgroundColor = NSColor.redColor.CGColor;
+//        self.wantsLayer = YES;
+//        self.layer.backgroundColor = NSColor.redColor.CGColor;
     }
     return self;
 }
