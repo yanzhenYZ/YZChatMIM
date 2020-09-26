@@ -6,11 +6,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
+#import "YZChatSplitView.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YZChatSplitViewController : NSViewController
-
+@property (nonatomic, strong, readonly) YZChatSplitView *splitView;
 @end
 
 NS_ASSUME_NONNULL_END

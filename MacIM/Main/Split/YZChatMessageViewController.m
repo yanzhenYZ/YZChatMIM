@@ -17,7 +17,7 @@
 @implementation YZChatMessageViewController
 
 - (void)viewDidLoad {
-    
+    [super viewDidLoad];
     // Do view setup here.
     
     _tableVC = [[YZChatTableViewController alloc] init];
@@ -28,9 +28,8 @@
     _chatVC.view.frame = NSMakeRect(280, 0, 280, 200);
     [self addChildViewController:_chatVC];
     
-    self.view.wantsLayer = YES;
-    self.view.layer.backgroundColor = NSColor.brownColor.CGColor;
-    [super viewDidLoad];
+    [self.splitView addSubview:_tableVC.view];
+    [self.splitView addSubview:_chatVC.view];
 }
 
 @end
