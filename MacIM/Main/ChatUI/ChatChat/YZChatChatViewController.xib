@@ -8,7 +8,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="YZChatChatViewController">
             <connections>
-                <outlet property="inputView" destination="KYj-Y8-A3F" id="9mz-S5-Qih"/>
+                <outlet property="inputBgView" destination="KYj-Y8-A3F" id="pf3-Ht-hqt"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -18,7 +18,7 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="500"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <customView translatesAutoresizingMaskIntoConstraints="NO" id="KYj-Y8-A3F" customClass="YZChatInputView">
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="KYj-Y8-A3F">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="120"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="120" id="OwA-z4-Hoe"/>

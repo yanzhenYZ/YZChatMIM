@@ -10,8 +10,7 @@
 #import "YZChatViewController.h"
 
 @interface YZChatWindow ()
-@property (nonatomic, strong) YZChatTopBarView *topBarView;
-@property (nonatomic, strong) YZChatViewController *chatVC;
+
 @end
 
 @implementation YZChatWindow
