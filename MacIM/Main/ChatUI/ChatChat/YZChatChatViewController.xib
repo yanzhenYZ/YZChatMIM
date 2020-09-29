@@ -1,19 +1,56 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17156" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17156"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="YZChatChatViewController">
             <connections>
+                <outlet property="inputView" destination="KYj-Y8-A3F" id="9mz-S5-Qih"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <rect key="frame" x="0.0" y="0.0" width="480" height="500"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="KYj-Y8-A3F" customClass="YZChatInputView">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="OwA-z4-Hoe"/>
+                    </constraints>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="v4O-7u-3o1">
+                    <rect key="frame" x="0.0" y="440" width="480" height="60"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CzK-Pi-yFh">
+                            <rect key="frame" x="222" y="24" width="37" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="5LR-Zc-x4g">
+                                <font key="font" usesAppearanceFont="YES"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="kfZ-3x-Weo"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="KYj-Y8-A3F" secondAttribute="bottom" id="7q7-6m-7qt"/>
+                <constraint firstAttribute="trailing" secondItem="KYj-Y8-A3F" secondAttribute="trailing" id="DQg-Zs-gse"/>
+                <constraint firstAttribute="trailing" secondItem="v4O-7u-3o1" secondAttribute="trailing" id="Pdi-k5-79C"/>
+                <constraint firstItem="v4O-7u-3o1" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="c3Q-9a-rfP"/>
+                <constraint firstItem="v4O-7u-3o1" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="cic-aY-Q2i"/>
+                <constraint firstItem="KYj-Y8-A3F" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="tqT-pm-zBN"/>
+            </constraints>
+            <point key="canvasLocation" x="-142" y="121"/>
         </customView>
     </objects>
 </document>

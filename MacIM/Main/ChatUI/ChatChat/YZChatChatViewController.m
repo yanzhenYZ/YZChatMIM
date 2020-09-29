@@ -6,8 +6,10 @@
 //
 
 #import "YZChatChatViewController.h"
+#import "YZChatInputView.h"
 
 @interface YZChatChatViewController ()
+@property (weak) IBOutlet YZChatInputView *inputView;
 
 @end
 
@@ -16,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
-    self.view.wantsLayer = YES;
-    self.view.layer.backgroundColor = NSColor.blackColor.CGColor;
+    _inputView.wantsLayer = YES;
+    _inputView.layer.backgroundColor = NSColor.purpleColor.CGColor;
 }
 
 @end

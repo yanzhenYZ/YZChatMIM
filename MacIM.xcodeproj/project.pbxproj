@@ -25,6 +25,8 @@
 		9B953690252326AE0099C001 /* YZChatChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B953689252326AE0099C001 /* YZChatChatViewController.m */; };
 		9B953691252326AE0099C001 /* YZChatChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B95368B252326AE0099C001 /* YZChatChatViewController.xib */; };
 		9B953692252326AE0099C001 /* YZChatMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B95368C252326AE0099C001 /* YZChatMessageViewController.m */; };
+		9B953698252328B70099C001 /* YZChatInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B953697252328B70099C001 /* YZChatInputView.m */; };
+		9B95369B252328D90099C001 /* YZChatInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B95369A252328D90099C001 /* YZChatInputView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,9 @@
 		9B95368A252326AE0099C001 /* YZChatChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZChatChatViewController.h; sourceTree = "<group>"; };
 		9B95368B252326AE0099C001 /* YZChatChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YZChatChatViewController.xib; sourceTree = "<group>"; };
 		9B95368C252326AE0099C001 /* YZChatMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZChatMessageViewController.m; sourceTree = "<group>"; };
+		9B953696252328B70099C001 /* YZChatInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZChatInputView.h; sourceTree = "<group>"; };
+		9B953697252328B70099C001 /* YZChatInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZChatInputView.m; sourceTree = "<group>"; };
+		9B95369A252328D90099C001 /* YZChatInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YZChatInputView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +186,9 @@
 				9B95368A252326AE0099C001 /* YZChatChatViewController.h */,
 				9B953689252326AE0099C001 /* YZChatChatViewController.m */,
 				9B95368B252326AE0099C001 /* YZChatChatViewController.xib */,
+				9B953696252328B70099C001 /* YZChatInputView.h */,
+				9B953697252328B70099C001 /* YZChatInputView.m */,
+				9B95369A252328D90099C001 /* YZChatInputView.xib */,
 			);
 			path = ChatChat;
 			sourceTree = "<group>";
@@ -243,6 +251,7 @@
 			files = (
 				9B95368E252326AE0099C001 /* YZChatTableViewController.xib in Resources */,
 				9B3E8E73251F18F700686107 /* Assets.xcassets in Resources */,
+				9B95369B252328D90099C001 /* YZChatInputView.xib in Resources */,
 				9B953691252326AE0099C001 /* YZChatChatViewController.xib in Resources */,
 				9B3E8E76251F18F700686107 /* Main.storyboard in Resources */,
 				9B3E8E98251F1B1100686107 /* YZChat.storyboard in Resources */,
@@ -258,6 +267,7 @@
 			files = (
 				9B3E8E8D251F1A0100686107 /* YZChatWindow.m in Sources */,
 				9B3E8E71251F18F700686107 /* ViewController.m in Sources */,
+				9B953698252328B70099C001 /* YZChatInputView.m in Sources */,
 				9B95368D252326AE0099C001 /* YZChatTableCellView.m in Sources */,
 				9B953690252326AE0099C001 /* YZChatChatViewController.m in Sources */,
 				9B3E8E79251F18F700686107 /* main.m in Sources */,
