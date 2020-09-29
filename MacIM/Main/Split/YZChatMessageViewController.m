@@ -19,16 +19,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
-    
+    [self setupUI];
+}
+
+- (void)setupUI {
     _tableVC = [[YZChatTableViewController alloc] init];
-    _tableVC.view.frame = NSMakeRect(0, 0, self.splitView.frame.size.width / 2, self.splitView.frame.size.height);
+    //根据比例自动调整
+    CGFloat tableViewW = self.splitView.frame.size.width * 300 / 860;
+    _tableVC.view.frame = NSMakeRect(0, 0, tableViewW, self.splitView.frame.size.height);
     [self addChildViewController:_tableVC];
-    
+    NSLog(@"122:%f", self.splitView.frame.size.width);
     _chatVC = [[YZChatChatViewController alloc] init];
-    _chatVC.view.frame = NSMakeRect(_tableVC.view.frame.size.width, 0, _tableVC.view.frame.size.width, self.splitView.frame.size.height);
+    _chatVC.view.frame = NSMakeRect(tableViewW, 0, self.splitView.frame.size.width - tableViewW, self.splitView.frame.size.height);
     [self addChildViewController:_chatVC];
     [self.splitView addArrangedSubview:_tableVC.view];
     [self.splitView addArrangedSubview:_chatVC.view];
 }
-
 @end
