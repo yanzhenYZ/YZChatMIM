@@ -28,7 +28,6 @@
     CGFloat tableViewW = self.splitView.frame.size.width * 300 / 860;
     _tableVC.view.frame = NSMakeRect(0, 0, tableViewW, self.splitView.frame.size.height);
     [self addChildViewController:_tableVC];
-    NSLog(@"122:%f", self.splitView.frame.size.width);
     _chatVC = [[YZChatChatViewController alloc] init];
     _chatVC.view.frame = NSMakeRect(tableViewW, 0, self.splitView.frame.size.width - tableViewW, self.splitView.frame.size.height);
     [self addChildViewController:_chatVC];

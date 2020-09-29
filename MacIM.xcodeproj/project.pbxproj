@@ -24,6 +24,7 @@
 		9B403CC2251F318C00B21F4E /* YZChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B403CC0251F318C00B21F4E /* YZChatTableViewController.m */; };
 		9B403CC3251F318C00B21F4E /* YZChatTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B403CC1251F318C00B21F4E /* YZChatTableViewController.xib */; };
 		9B403CE8251F3B0C00B21F4E /* YZSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B403CE7251F3B0C00B21F4E /* YZSplitView.m */; };
+		9B953679252308020099C001 /* YZChatTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B953678252308020099C001 /* YZChatTableCellView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,8 @@
 		9B403CC1251F318C00B21F4E /* YZChatTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YZChatTableViewController.xib; sourceTree = "<group>"; };
 		9B403CE6251F3B0C00B21F4E /* YZSplitView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZSplitView.h; sourceTree = "<group>"; };
 		9B403CE7251F3B0C00B21F4E /* YZSplitView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZSplitView.m; sourceTree = "<group>"; };
+		9B953677252308020099C001 /* YZChatTableCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZChatTableCellView.h; sourceTree = "<group>"; };
+		9B953678252308020099C001 /* YZChatTableCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZChatTableCellView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,8 @@
 				9B403CBF251F318C00B21F4E /* YZChatTableViewController.h */,
 				9B403CC0251F318C00B21F4E /* YZChatTableViewController.m */,
 				9B403CC1251F318C00B21F4E /* YZChatTableViewController.xib */,
+				9B953677252308020099C001 /* YZChatTableCellView.h */,
+				9B953678252308020099C001 /* YZChatTableCellView.m */,
 				9B403CB8251F310C00B21F4E /* YZChatChatViewController.h */,
 				9B403CB9251F310C00B21F4E /* YZChatChatViewController.m */,
 				9B403CBA251F310C00B21F4E /* YZChatChatViewController.xib */,
@@ -228,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B403CC2251F318C00B21F4E /* YZChatTableViewController.m in Sources */,
+				9B953679252308020099C001 /* YZChatTableCellView.m in Sources */,
 				9B3E8E8D251F1A0100686107 /* YZChatWindow.m in Sources */,
 				9B3E8E71251F18F700686107 /* ViewController.m in Sources */,
 				9B3E8E79251F18F700686107 /* main.m in Sources */,
