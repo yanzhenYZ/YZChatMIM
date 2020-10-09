@@ -9,7 +9,7 @@
 #import "YZChatTableViewController.h"
 #import "YZChatChatViewController.h"
 
-@interface YZChatMessageViewController ()
+@interface YZChatMessageViewController ()<YZChatTableViewControllerDelegate>
 @property (nonatomic, strong) YZChatTableViewController *tableVC;
 @property (nonatomic, strong) YZChatChatViewController *chatVC;
 @end
@@ -24,6 +24,7 @@
 
 - (void)setupUI {
     _tableVC = [[YZChatTableViewController alloc] init];
+    _tableVC.delegate = self;
     //根据比例自动调整
     CGFloat tableViewW = self.splitView.frame.size.width * 300 / 860;
     _tableVC.view.frame = NSMakeRect(0, 0, tableViewW, self.splitView.frame.size.height);
@@ -33,5 +34,10 @@
     [self addChildViewController:_chatVC];
     [self.splitView addArrangedSubview:_tableVC.view];
     [self.splitView addArrangedSubview:_chatVC.view];
+}
+
+#pragma mark - YZChatTableViewControllerDelegate
+- (void)chatTableViewController:(YZChatTableViewController *)controller didSelected:(NSInteger)selectedRow {
+    [_chatVC updateName:[NSString stringWithFormat:@"%ld", selectedRow]];
 }
 @end

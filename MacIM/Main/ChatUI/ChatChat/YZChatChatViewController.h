@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YZChatChatViewController : NSViewController
-
+- (void)updateName:(NSString *)name;
 @end
 
 NS_ASSUME_NONNULL_END

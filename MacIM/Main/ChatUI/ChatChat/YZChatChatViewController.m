@@ -11,6 +11,7 @@
 @interface YZChatChatViewController ()
 @property (strong)  YZChatInputView *inputView;
 @property (weak) IBOutlet NSView *inputBgView;
+@property (weak) IBOutlet NSTextField *nameLabel;
 
 @end
 
@@ -28,4 +29,7 @@
     _inputView.layer.backgroundColor = NSColor.purpleColor.CGColor;
 }
 
+- (void)updateName:(NSString *)name {
+    _nameLabel.stringValue = name;
+}
 @end

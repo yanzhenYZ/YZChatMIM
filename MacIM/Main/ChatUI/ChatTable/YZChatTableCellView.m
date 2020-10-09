@@ -30,7 +30,7 @@
 - (void)mouseEntered:(NSEvent *)event {
     NSTableRowView *superView = (NSTableRowView *)self.superview;
     if (superView.isSelected) { return; }
-    superView.backgroundColor = NSColor.brownColor;
+    superView.backgroundColor = [NSColor colorWithRed:22/255.0 green:22/255.0 blue:22/255.0 alpha:0.1];
 }
 
 - (void)mouseExited:(NSEvent *)event {

@@ -50,5 +50,8 @@
     NSTableRowView *rowView = [self.tableView rowViewAtRow:self.tableView.selectedRow makeIfNecessary:YES];
     rowView.backgroundColor = NSColor.redColor;
     self.selectView = rowView;
+    if ([_delegate respondsToSelector:@selector(chatTableViewController:didSelected:)]) {
+        [_delegate chatTableViewController:self didSelected:self.tableView.selectedRow];
+    }
 }
 @end

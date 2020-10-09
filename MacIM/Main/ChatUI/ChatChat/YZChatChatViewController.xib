@@ -9,6 +9,7 @@
         <customObject id="-2" userLabel="File's Owner" customClass="YZChatChatViewController">
             <connections>
                 <outlet property="inputBgView" destination="KYj-Y8-A3F" id="pf3-Ht-hqt"/>
+                <outlet property="nameLabel" destination="CzK-Pi-yFh" id="MKP-mV-z7I"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -25,11 +26,10 @@
                     </constraints>
                 </customView>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="v4O-7u-3o1">
-                    <rect key="frame" x="0.0" y="440" width="480" height="60"/>
+                    <rect key="frame" x="0.0" y="470" width="480" height="30"/>
                     <subviews>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CzK-Pi-yFh">
-                            <rect key="frame" x="222" y="24" width="37" height="16"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CzK-Pi-yFh">
+                            <rect key="frame" x="222" y="7" width="37" height="16"/>
                             <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="5LR-Zc-x4g">
                                 <font key="font" usesAppearanceFont="YES"/>
                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -38,7 +38,9 @@
                         </textField>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="height" constant="60" id="kfZ-3x-Weo"/>
+                        <constraint firstItem="CzK-Pi-yFh" firstAttribute="centerY" secondItem="v4O-7u-3o1" secondAttribute="centerY" id="LeS-iK-chl"/>
+                        <constraint firstItem="CzK-Pi-yFh" firstAttribute="centerX" secondItem="v4O-7u-3o1" secondAttribute="centerX" id="kCA-U0-3E9"/>
+                        <constraint firstAttribute="height" constant="30" id="kfZ-3x-Weo"/>
                     </constraints>
                 </customView>
             </subviews>
