@@ -20,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
+    _nameLabel.stringValue = @"0";
     //直接xib加载容易出现加载不出来的情况
     _inputView = [[YZChatInputView alloc] initWithFrame:_inputBgView.bounds];
     _inputView.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;

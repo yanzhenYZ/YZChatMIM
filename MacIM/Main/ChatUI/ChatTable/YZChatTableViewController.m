@@ -22,6 +22,8 @@
     self.view.wantsLayer = YES;
     self.view.layer.backgroundColor = NSColor.purpleColor.CGColor;
     _tableView.headerView = nil;
+    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
+    [self.tableView selectRowIndexes:indexSet byExtendingSelection:NO];
 }
 
 #pragma mark - tableview
