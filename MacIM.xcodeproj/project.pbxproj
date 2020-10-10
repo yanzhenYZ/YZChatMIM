@@ -27,6 +27,10 @@
 		9B953692252326AE0099C001 /* YZChatMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B95368C252326AE0099C001 /* YZChatMessageViewController.m */; };
 		9B953698252328B70099C001 /* YZChatInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B953697252328B70099C001 /* YZChatInputView.m */; };
 		9B95369B252328D90099C001 /* YZChatInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B95369A252328D90099C001 /* YZChatInputView.xib */; };
+		9B9549A025315D3A0099C001 /* YZOtherMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B95499F25315D3A0099C001 /* YZOtherMessageCell.m */; };
+		9B9549A325315D7A0099C001 /* YZOtherMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9549A225315D7A0099C001 /* YZOtherMessageCell.xib */; };
+		9B9549A72531892C0099C001 /* users.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B9549A62531892C0099C001 /* users.plist */; };
+		9B9549AC253189C80099C001 /* YZUsersChatInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9549AB253189C80099C001 /* YZUsersChatInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +70,12 @@
 		9B953696252328B70099C001 /* YZChatInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZChatInputView.h; sourceTree = "<group>"; };
 		9B953697252328B70099C001 /* YZChatInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZChatInputView.m; sourceTree = "<group>"; };
 		9B95369A252328D90099C001 /* YZChatInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YZChatInputView.xib; sourceTree = "<group>"; };
+		9B95499E25315D3A0099C001 /* YZOtherMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZOtherMessageCell.h; sourceTree = "<group>"; };
+		9B95499F25315D3A0099C001 /* YZOtherMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZOtherMessageCell.m; sourceTree = "<group>"; };
+		9B9549A225315D7A0099C001 /* YZOtherMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YZOtherMessageCell.xib; sourceTree = "<group>"; };
+		9B9549A62531892C0099C001 /* users.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = users.plist; sourceTree = "<group>"; };
+		9B9549AA253189C80099C001 /* YZUsersChatInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZUsersChatInfo.h; sourceTree = "<group>"; };
+		9B9549AB253189C80099C001 /* YZUsersChatInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZUsersChatInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +115,7 @@
 				9B3E8E88251F19C400686107 /* Main */,
 				9B3E8E82251F196E00686107 /* Manager */,
 				9B3E8E72251F18F700686107 /* Assets.xcassets */,
+				9B9549A5253189010099C001 /* Resources */,
 				9B3E8E74251F18F700686107 /* Main.storyboard */,
 				9B3E8E77251F18F700686107 /* Info.plist */,
 				9B3E8E78251F18F700686107 /* main.m */,
@@ -160,6 +171,8 @@
 		9B95367E252325900099C001 /* ChatUI */ = {
 			isa = PBXGroup;
 			children = (
+				9B9549A9253189920099C001 /* Model */,
+				9B95499825315C440099C001 /* ChatCell */,
 				9B953688252326AE0099C001 /* ChatChat */,
 				9B953681252326AE0099C001 /* ChatTable */,
 				9B953687252326AE0099C001 /* YZChatMessageViewController.h */,
@@ -191,6 +204,33 @@
 				9B95369A252328D90099C001 /* YZChatInputView.xib */,
 			);
 			path = ChatChat;
+			sourceTree = "<group>";
+		};
+		9B95499825315C440099C001 /* ChatCell */ = {
+			isa = PBXGroup;
+			children = (
+				9B95499E25315D3A0099C001 /* YZOtherMessageCell.h */,
+				9B95499F25315D3A0099C001 /* YZOtherMessageCell.m */,
+				9B9549A225315D7A0099C001 /* YZOtherMessageCell.xib */,
+			);
+			path = ChatCell;
+			sourceTree = "<group>";
+		};
+		9B9549A5253189010099C001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9B9549A62531892C0099C001 /* users.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9B9549A9253189920099C001 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B9549AA253189C80099C001 /* YZUsersChatInfo.h */,
+				9B9549AB253189C80099C001 /* YZUsersChatInfo.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,8 +293,10 @@
 				9B3E8E73251F18F700686107 /* Assets.xcassets in Resources */,
 				9B95369B252328D90099C001 /* YZChatInputView.xib in Resources */,
 				9B953691252326AE0099C001 /* YZChatChatViewController.xib in Resources */,
+				9B9549A325315D7A0099C001 /* YZOtherMessageCell.xib in Resources */,
 				9B3E8E76251F18F700686107 /* Main.storyboard in Resources */,
 				9B3E8E98251F1B1100686107 /* YZChat.storyboard in Resources */,
+				9B9549A72531892C0099C001 /* users.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +318,9 @@
 				9B953692252326AE0099C001 /* YZChatMessageViewController.m in Sources */,
 				9B3E8EA8251F260300686107 /* YZChatSplitViewController.m in Sources */,
 				9B3E8E91251F1A6C00686107 /* YZChatTopBarView.m in Sources */,
+				9B9549A025315D3A0099C001 /* YZOtherMessageCell.m in Sources */,
 				9B403CE8251F3B0C00B21F4E /* YZSplitView.m in Sources */,
+				9B9549AC253189C80099C001 /* YZUsersChatInfo.m in Sources */,
 				9B3E8E9F251F227D00686107 /* YZChatLeftView.m in Sources */,
 				9B3E8E6E251F18F600686107 /* AppDelegate.m in Sources */,
 			);
